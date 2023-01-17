@@ -21,9 +21,9 @@ let weather = {
     const { icon, description } = data.weather[0];
     const { temp, humidity, pressure, temp_min, temp_max } = data.main;
     const { speed } = data.wind;
-    const { country }=data.sys;
     
-    document.querySelector(".country").innerText="Country: "+country;
+    
+    
     document.querySelector(".city").innerText = "Weather in " + name;
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
